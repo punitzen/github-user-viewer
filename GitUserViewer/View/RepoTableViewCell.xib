@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="RepoTableViewCell" rowHeight="255" id="KGk-i7-Jjw" customClass="RepoTableViewCell" customModule="GitUserViewer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="661" height="255"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="661" height="255"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uHj-tg-AnW" userLabel="Repo View">
+                        <rect key="frame" x="10" y="10" width="641" height="235"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GitHub-Mark" translatesAutoresizingMaskIntoConstraints="NO" id="CNk-3u-FSO">
+                                <rect key="frame" x="5" y="10" width="70" height="70"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="MtD-Vq-OD4"/>
+                                    <constraint firstAttribute="height" constant="70" id="cdR-jT-4n5"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NNW-gH-Rhk" userLabel="Top Stack View">
+                                <rect key="frame" x="85" y="10" width="551" height="113"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="repository name" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dAN-RC-h22">
+                                        <rect key="frame" x="0.0" y="0.0" width="551" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="px6-nl-zCw"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="repository description" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZNF-4d-NBZ">
+                                        <rect key="frame" x="0.0" y="55" width="551" height="58"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="left" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="apI-bQ-XsS" userLabel="Bottom Stack">
+                                <rect key="frame" x="5" y="188" width="631" height="37"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Language" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Mw-qq-qpD">
+                                        <rect key="frame" x="0.0" y="0.0" width="55" height="37"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="star count" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bEg-9b-klk">
+                                        <rect key="frame" x="172.5" y="0.0" width="56" height="37"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" id="Su2-RC-h1v">
+                                        <rect key="frame" x="345.66666666666663" y="7" width="98" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" image="git-fork-1" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SuM-74-sJ5">
+                                                <rect key="frame" x="0.0" y="0.0" width="41.5" height="30"/>
+                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small" weight="thin"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="fork count" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MNw-Eh-0jG">
+                                                <rect key="frame" x="41.5" y="0.0" width="56.5" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <viewLayoutGuide key="safeArea" id="5Xv-if-efi"/>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="updated at" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="SJl-WV-Wtt">
+                                        <rect key="frame" x="561" y="0.0" width="70" height="37"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="rmb-EH-1nF">
+                                <rect key="frame" x="85" y="138" width="551" height="35"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Mll-GJ-TUg"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Rxk-nH-Tdq">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstItem="rmb-EH-1nF" firstAttribute="top" secondItem="NNW-gH-Rhk" secondAttribute="bottom" constant="15" id="2pF-fb-DvM"/>
+                            <constraint firstItem="rmb-EH-1nF" firstAttribute="leading" secondItem="NNW-gH-Rhk" secondAttribute="leading" id="4Ol-nO-BHE"/>
+                            <constraint firstItem="apI-bQ-XsS" firstAttribute="top" secondItem="rmb-EH-1nF" secondAttribute="bottom" constant="15" id="Fi7-t8-PhO"/>
+                            <constraint firstItem="NNW-gH-Rhk" firstAttribute="top" secondItem="CNk-3u-FSO" secondAttribute="top" id="O2e-mX-bPI"/>
+                            <constraint firstItem="CNk-3u-FSO" firstAttribute="top" secondItem="uHj-tg-AnW" secondAttribute="top" constant="10" id="PbF-ft-Jy7"/>
+                            <constraint firstItem="NNW-gH-Rhk" firstAttribute="leading" secondItem="CNk-3u-FSO" secondAttribute="trailing" constant="10" id="Pdu-Pp-FNM"/>
+                            <constraint firstItem="CNk-3u-FSO" firstAttribute="leading" secondItem="uHj-tg-AnW" secondAttribute="leading" constant="5" id="PeE-9I-wrG"/>
+                            <constraint firstItem="apI-bQ-XsS" firstAttribute="leading" secondItem="uHj-tg-AnW" secondAttribute="leading" constant="5" id="Y9Y-EZ-udU"/>
+                            <constraint firstAttribute="bottom" secondItem="apI-bQ-XsS" secondAttribute="bottom" constant="10" id="ZHf-xm-Ulv"/>
+                            <constraint firstAttribute="trailing" secondItem="rmb-EH-1nF" secondAttribute="trailing" constant="5" id="eBl-Lj-HGw"/>
+                            <constraint firstAttribute="trailing" secondItem="apI-bQ-XsS" secondAttribute="trailing" constant="5" id="q7Y-DA-XFQ"/>
+                            <constraint firstAttribute="trailing" secondItem="NNW-gH-Rhk" secondAttribute="trailing" constant="5" id="vwX-kr-yid"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="uHj-tg-AnW" secondAttribute="trailing" constant="10" id="Dww-ms-7L0"/>
+                    <constraint firstItem="uHj-tg-AnW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="N9E-eL-V6Y"/>
+                    <constraint firstItem="uHj-tg-AnW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="psO-vf-QnV"/>
+                    <constraint firstAttribute="bottom" secondItem="uHj-tg-AnW" secondAttribute="bottom" constant="10" id="rb4-7H-RKu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="RepoView" destination="uHj-tg-AnW" id="n62-p5-vF8"/>
+                <outlet property="collectionViewHeight" destination="Mll-GJ-TUg" id="9Oe-ff-Wie"/>
+                <outlet property="repoDescLabel" destination="ZNF-4d-NBZ" id="r30-nY-CMl"/>
+                <outlet property="repoForkCountLabel" destination="MNw-Eh-0jG" id="fe2-Eb-YWy"/>
+                <outlet property="repoImageView" destination="CNk-3u-FSO" id="Htq-Bm-Qdc"/>
+                <outlet property="repoLangLabel" destination="1Mw-qq-qpD" id="eGK-SH-VCx"/>
+                <outlet property="repoNameLabel" destination="dAN-RC-h22" id="tX0-Cq-c0m"/>
+                <outlet property="repoStarCountLabel" destination="bEg-9b-klk" id="Xw3-28-7vM"/>
+                <outlet property="repoUpdatedAt" destination="SJl-WV-Wtt" id="7BV-bf-oVQ"/>
+                <outlet property="topicsCollectionView" destination="rmb-EH-1nF" id="Wg4-Yn-9DA"/>
+            </connections>
+            <point key="canvasLocation" x="383.33333333333337" y="156.36160714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="GitHub-Mark" width="560" height="560"/>
+        <image name="git-fork-1" width="24" height="24"/>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
