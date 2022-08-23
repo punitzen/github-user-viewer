@@ -1,5 +1,5 @@
 ## Github User Viewer
-An app to view github user profile, shows user name, login, bio, repository count, followers, following, repositories and contributors. used github api to fetch user details, repositories and contributors, used TableView, CollectionView, NavigationController and CustomUI Cell through Xib. Implemented through MVVM Architecture. 
+An app to view github user profile, shows user name, login, bio, repository count, followers, following, repositories and contributors. used github api to fetch user details, repositories and contributors, used TableView, CollectionView, NavigationController and CustomUI Cell through Xib. Implemented through MVVM Architecture. written unit tests under GitUserViewerTests folder. 
 
 ![gitDemo](gitDemo.gif)
 
